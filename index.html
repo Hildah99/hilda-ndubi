@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>️True North</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(180deg, #fff0f5, #fdeff2);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 680px;
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+      text-align: center;
+    }
+
+    .heart {
+      font-size: 42px;
+      color: #e91e63;
+      margin-bottom: 12px;
+      animation: pulse 1.6s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+      100% { transform: scale(1); }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #c2185b;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: normal;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      margin-top: 24px;
+      font-style: italic;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    /* 🎵 MUSIC BUTTON */
+    .music-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      background: #e91e63;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .music-btn:hover {
+      background: #c2185b;
+    }
+
+    @media (min-width: 600px) {
+      .card { padding: 32px; }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.25rem; }
+    }
+
+    @media (min-width: 1024px) {
+      .card { padding: 40px; }
+      h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="heart">❤️</div>
+
+    <h1>To My Lovely Immaculate</h1>
+        <!-- 🎵 MUSIC BUTTON -->
+    <button class="music-btn" onclick="toggleMusic()">
+      ▶ Play Music
+    </button>
+      <!-- 🎵 AUDIO -->
+  <audio id="bgMusic" loop>
+    <source src="audio1.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <script>
+    const music = document.getElementById("bgMusic");
+    const button = document.querySelector(".music-btn");
+
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        button.textContent = "⏸ Pause Music";
+      } else {
+        music.pause();
+        button.textContent = "▶ Play Music";
+      }
+    }
+  </script><br>
+    <p>
+Aren’t you just… immaculate?<br>
+Your smile finds its way to my cheeks,<br>
+and before I even realize it,<br>
+my face betrays me<br>
+muscles dancing on their own,<br>
+a smile blooming without permission.
+</p>
+<br>
+<p>
+You carry me away for a moment,<br>
+steal me from the world so effortlessly.<br>
+Oh, Immaculate…
+</p>
+<br>
+<p>
+You are like a restless river;<br>
+bold, fearless, carving new banks<br>
+because it dares to follow its own course.<br>
+There’s something beautifully wild about you:
+Your eyes… your voice…<br>
+
+</p>
+<br><br>
+<p>
+How could I ever forget your little fingers?<br>
+They’re like delicate tulips coming to life<br>
+soft, gentle, dangerous in how they undo me.<br>
+I imagine them tracing down my spine,<br>
+sending shivers,<br>
+leaving me breathless and smiling to myself.
+</p>
+<br>
+<p>
+I could fantasize about you all day<br>
+and still find you waiting for me in my dream.<br>
+They say when the time is right,<br>
+God will make it happen and...
+I’ll tie an eternal knot between us.<br>
+So many beautiful things have happened in my life<br>
+simply because of you.
+</p>
+<br>
+<p>
+A thank-you note would never be enough.<br>
+Instead, I’ll ask—no, I’ll plead<br>
+stay a little longer, my darling.<br>
+We will have everything we talked about.
+</p>
+<br>
+<p>
+Because one day,<br>
+I want to look back and see<br>
+the woman of my dreams<br>
+not only loved…<br>
+but living her dreams too.
+</p>
+<br>
+    <p>
+      You are my calm, my fire, my forever.
+      Your love has shaped my life in ways words can never fully explain.
+      You are my safest place, my sweetest thought,
+      and the woman I choose every single day.
+    </p>
+<br>
+    <p>
+      No matter where life takes us,
+      I want to walk it with you hand in hand,
+      heart in heart.
+    </p>
+<br>
+<p>oh! Typed my heart out… now it’s the part I’ve been nervous about: will you be my Valentine? 
+</p>
+
+    <footer>
+      Always yours,<br>
+      ❤️
+    </footer>
+  </div>
+
+
+
+</body>
+</html>
